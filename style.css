@@ -1,0 +1,78 @@
+/* for all the elements */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* html body style */
+body{
+    background-color: #e7d8c9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* main - calculator style */
+#calculator{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0a0908;
+    border-radius: 20px;
+    max-width: 400px;
+    overflow: hidden;
+    border: 5px solid rgb(20, 93, 220);
+}
+
+
+#display {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+
+    text-align: right;
+    background-color: #0a0908;
+    color: white;
+    font-size: 5rem; 
+    box-sizing: border-box; 
+    white-space: nowrap; 
+    overflow: hidden; 
+}
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 15px;
+}
+
+button{
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #343a40;
+    color: white;
+}
+
+button:hover{
+    background-color: #4e545a;
+}
+
+button:active{
+    background-color: hsl(207, 5%, 42%);
+}
+
+.operator{
+    background-color: hsl(347, 66%, 44%);
+}
+.operator:hover{
+    background-color: hsl(347, 66%, 54%);
+}
+.operator:active{
+    background-color: hsl(347, 66%, 64%);
+}
